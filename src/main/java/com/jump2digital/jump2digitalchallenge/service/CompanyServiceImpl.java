@@ -1,6 +1,5 @@
 package com.jump2digital.jump2digitalchallenge.service;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.jump2digital.jump2digitalchallenge.model.Company;
 import com.jump2digital.jump2digitalchallenge.repository.CompanyRepository;
 import com.jump2digital.jump2digitalchallenge.utils.CountByField;
