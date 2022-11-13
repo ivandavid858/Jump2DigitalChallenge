@@ -51,13 +51,6 @@ public class CompanyServiceImpl implements CompanyService {
                 case "website" -> company.setWebsite(String.valueOf(comp.getValue()));
                 case "name" -> company.setName(String.valueOf(comp.getValue()));
                 case "founded" -> company.setFounded((Integer) comp.getValue());
-                /*case "founded" -> {
-                    if (comp.getValue() != null) {
-                        company.setFounded(String.valueOf(comp.getValue()));
-                    } else {
-                        company.setFounded("");
-                    }
-                }*/
                 case "size" -> company.setSize(String.valueOf(comp.getValue()));
                 case "locality" -> company.setLocality(String.valueOf(comp.getValue()));
                 case "region" -> company.setRegion(String.valueOf(comp.getValue()));

@@ -1,7 +1,5 @@
 package com.jump2digital.jump2digitalchallenge.controller;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.jump2digital.jump2digitalchallenge.DTO.CompanyDTO;
 import com.jump2digital.jump2digitalchallenge.model.Company;
 import com.jump2digital.jump2digitalchallenge.service.CompanyService;
 import com.jump2digital.jump2digitalchallenge.utils.CountByField;
@@ -13,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @RequestMapping("companies")
 public class CompanyController {
 
@@ -37,8 +34,7 @@ public class CompanyController {
 
     @GetMapping("/all_counted_by_types")
     public CountByField getCountOfCompaniesByTypes() {
-        var counts = companyService.getCountOfCompaniesByTypes();
-        return counts;
+        return companyService.getCountOfCompaniesByTypes();
     }
 
 }

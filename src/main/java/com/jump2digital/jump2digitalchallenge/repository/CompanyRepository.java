@@ -1,6 +1,5 @@
 package com.jump2digital.jump2digitalchallenge.repository;
 
-import com.jump2digital.jump2digitalchallenge.DTO.CountByFieldDTO;
 import com.jump2digital.jump2digitalchallenge.model.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
